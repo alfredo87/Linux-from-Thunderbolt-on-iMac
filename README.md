@@ -87,17 +87,17 @@ then update initramfs
 To get this to work I installed the MX system by connecting the enclosure to an USB3.0 port and booting it from there and then applied the xiongyw code.
 It worked perfectly!
 
-After this I had a working MXlinux system and I ws able to modify all the appearance settings to my liking and preference (desktop,wallpaper,office suite,Etc.)
+After this I had a working MXlinux system and I was able to modify all the "appearance" settings to my liking and preference (desktop,wallpaper,office suite,Etc.)
 
 As it is well known, wifi does not work but the latest kernels have the driver/module ready. 
-Next as audio which I got to work using this module:
-https://github.com/davidjo/snd_hda_macbookpro
+Next was audio which I got to work using this module:
+[https://github.com/davidjo/snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro)
 
-The mounting of the iMac APFS files was achieved by installing https://github.com/linux-apfs/linux-apfs-rw
+The mounting of the iMac APFS files was achieved by installing [https://github.com/linux-apfs/linux-apfs-rw](https://github.com/linux-apfs/linux-apfs-rw)
 With that I can access all my old documents and files on the iMac fusion drive.
 
 The last issue is bluetooth to connect the Magic Mouse and the keyboard. I could not find a solution and just plugged the keyboard into the usb port and used a wifi dongle mouse.
 
-The iMac CPU does the work, the display makes it a pleasure to work on the iMac and the Thunderbolt drive gives me the speed. Finally Mxlinux has all the apps I need and it will be updated and kept safe (I hope!)
+The iMac CPU does the work, the display makes it a pleasure to work on the iMac and the Thunderbolt drive gives me the speed. Finally MXlinux has all the apps I need and it will be updated and kept safe (I hope!)
 
-I hope this helps somebody else to keep "old" Intel macs running.
+I hope this helps somebody else to keep "old" Intel Apple macs running.
