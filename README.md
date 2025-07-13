@@ -22,8 +22,8 @@ After researching a lot on the internet I bought a 	ZikeDrive Z666 USB4 40Gbps N
  
  ![](./Screenshot_2025-07-13_09-24-29.png "List of ISOs")
 
-From this list I chose Mxlinux because it fulfilled most requirements and worked as soon as installed.
-The biggest challenge was how to boot the thunderbolt disk in Mxlinux.
+From this list I chose MXlinux because it fulfilled most requirements and worked as soon as installed.
+The biggest challenge was how to boot the thunderbolt disk in MXlinux.
 The situation is that the thunderbolt port driver is not loaded until he kernel boots.
 This means that the initrdfs (initial ram disk) needs to load the thunderbolt driver and then boot the kernel.
 
