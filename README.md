@@ -19,8 +19,8 @@ After researching a lot on the internet I bought a 	ZikeDrive Z666 USB4 40Gbps N
 ###    2. The Journey towards a Solution
 
  First task was to find a distro that worked almost out-of-the-box. To make testing easier I used a Ventoy USB dongle with a lot of live ISOs.
- ![](../Pictures/Screenshot_2025-07-13_09-24-29.png "List of ISOs")
-
+ 
+ ![](./Screenshot_2025-07-13_09-24-29.png "List of ISOs")
 
 From this list I chose Mxlinux because it fulfilled most requirements and worked as soon as installed.
 The biggest challenge was how to boot the thunderbolt disk in Mxlinux.
