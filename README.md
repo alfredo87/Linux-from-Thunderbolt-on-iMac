@@ -1,5 +1,9 @@
 ### Imac 18,3 Intel reaches EOL: what's next?
 
+
+![](./Imac.jpg)
+
+
 ###       1. The Concept
 
 The intel powered mac computers are now reaching their End Of Life according to Apple: no more updates, less security updates. Software is intentionally being withdrawn since apps will stop working.
