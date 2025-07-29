@@ -25,11 +25,11 @@ After researching a lot on the internet I bought a 	ZikeDrive Z666 USB4 40Gbps N
 ![ImAC DISK SPEED](https://github.com/alfredo87/iMacEOL/blob/main/APPLE%20SSD%20SM0128L%20%EF%80%A2%20Intel%20Core%20i5-7500.png)
 
 FIGURE 2. SPEED TEST APP IN MACOS: FUSION DRIVE
-
+___________________________________________________________________________________________________________________________
 ![tHUNDERBOLT DISK SPEED](https://github.com/alfredo87/iMacEOL/blob/main/Screenshot_2025-07-28_18-18-14.png))
 
 FIGURE3. SPEED TEST APP IN MX LINUX:THUNDERBOLT
-
+___________________________________________________________________________________________________________________________
 
 ###    2. The Journey towards a Solution
 
@@ -38,7 +38,7 @@ FIGURE3. SPEED TEST APP IN MX LINUX:THUNDERBOLT
  ![](./Screenshot_2025-07-13_09-24-29.png "List of ISOs")
 
  FIGURE 4. LIST OF DISTROS ON VENTOY DRIVE
-
+___________________________________________________________________________________________________________________________
 From this list I chose MXlinux because it fulfilled most requirements and worked as soon as installed.
 The biggest challenge was how to boot the thunderbolt disk in MXlinux.
 The situation is that the thunderbolt port driver is not loaded until he kernel boots.
