@@ -3,6 +3,8 @@
 
 ![](./Imac.jpg)
 
+FIGURE1. IMAC RUNNING MX LINUX WITH MICE IN FRONT AND KEYBOARD
+
 
 ###       1. The Concept
 
@@ -20,11 +22,22 @@ So, I decided that I could install a linux distro and double boot it with macOS:
 The next best thing is to use an external SSD but connected to the thunderbolt port of the imac.
 After researching a lot on the internet I bought a 	ZikeDrive Z666 USB4 40Gbps NVMe M.2 SSD Enclosure with a Samsung 990 EVO NVMe M.2 SSD 1 TB, PCIe 4.0 x4 / PCIe 5.0 x2, NVMe 2.0 (2280) SSD. That should give good speeds.
 
+![ImAC DISK SPEED](https://github.com/alfredo87/iMacEOL/blob/main/APPLE%20SSD%20SM0128L%20%EF%80%A2%20Intel%20Core%20i5-7500.png)
+
+FIGURE 2. SPEED TEST APP IN MACOS: FUSION DRIVE
+
+![tHUNDERBOLT DISK SPEED](https://github.com/alfredo87/iMacEOL/blob/main/Screenshot_2025-07-28_18-18-14.png))
+
+FIGURE3. SPEED TEST APP IN MX LINUX:THUNDERBOLT
+
+
 ###    2. The Journey towards a Solution
 
  First task was to find a distro that worked almost out-of-the-box. To make testing easier I used a Ventoy USB dongle with a lot of live ISOs.
  
  ![](./Screenshot_2025-07-13_09-24-29.png "List of ISOs")
+
+ FIGURE 4. LIST OF DISTROS ON VENTOY DRIVE
 
 From this list I chose MXlinux because it fulfilled most requirements and worked as soon as installed.
 The biggest challenge was how to boot the thunderbolt disk in MXlinux.
