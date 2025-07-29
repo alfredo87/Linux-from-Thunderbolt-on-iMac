@@ -96,6 +96,8 @@ Next was audio which I got to work using this module:
 The mounting of the iMac APFS files was achieved by installing [https://github.com/linux-apfs/linux-apfs-rw](https://github.com/linux-apfs/linux-apfs-rw)
 With that I can access all my old documents and files on the iMac fusion drive. To make module addition permanent it is neessary to add apfs to the end of file /etc/modules and copy the apfs.ko module to a new folder called apfs in /usr/lib/modules/$(uname -r)/kernel/drivers/
 
+The power manager does not work at all: when exiting to Suspend or Sleep mode the machine switches off and never wakes again. I have to reboot the iMac from the on/off switch at the rear.
+
 The last issue is bluetooth to connect the Magic Mouse and the keyboard. I could not find a solution and just plugged the keyboard into the usb port and used a wifi dongle mouse.
 
 The iMac CPU does the work, the display makes it a pleasure to work on the iMac and the Thunderbolt drive gives me the speed. Finally MXlinux has all the apps I need and it will be updated and kept safe (I hope!)
