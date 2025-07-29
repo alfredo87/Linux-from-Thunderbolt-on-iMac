@@ -1,4 +1,4 @@
-### Imac 18,3 Intel reaches EOL: what's next?
+ # **iMac 18,3 Intel reaches End Of Life: what's next?**
 
 
 ![](./Imac.jpg)
