@@ -57,7 +57,7 @@ Quoting from that post it tells how to do it and I am really grateful to xiongyw
 
 - add thunderbolt in
 - 
-  `` /etc/initramfs-tools/module ``
+  `` /etc/initramfs-tools/modules ``
 
 *Then create a script and make it executable*
 - `` sudo chmod +x /etc/initramfs-tools/scripts/init-premount/thunderbolt-auth.sh``
