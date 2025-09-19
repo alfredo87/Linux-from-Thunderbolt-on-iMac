@@ -116,11 +116,7 @@ The last issue is bluetooth to connect the Magic Mouse and the keyboard. I could
 
 The iMac CPU does the work, the display makes it a pleasure to work on the iMac and the Thunderbolt drive gives me the speed. Finally MXlinux has all the apps I need and it will be updated and kept safe (I hope!)
 
-ADDENDUM: JUST TRIED TO ACTIVATE AND AUTHORISE THUNDERBOLT DRIVE USING MAGEIA.
-It works like this: 
-add thunderbolt to /etc/modprobe.preload     as root
-copy the script thunderbolt-auth.sh to   /etc/init.d/ and rename it to thunderbolt
-make that script executable by chmod +x /etc/modprobe.preload
-I have not installed Mageia on the thunderbolt drive yet. It is running from a normal USB3 drive
+ADDENDUM: The same method can be used for Debian 13 Trixie and all works fine so far.
+There have been many issues with MX snapshots written to USB key in connection with installing Grub: it always reports that Grub boot loader failed.
 
 I hope this helps somebody else to keep "old" Intel Apple macs running.
