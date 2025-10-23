@@ -116,8 +116,12 @@ The last issue is bluetooth to connect the Magic Mouse and the keyboard. I could
 
 The iMac CPU does the work, the display makes it a pleasure to work on the iMac and the Thunderbolt drive gives me the speed. Finally MXlinux has all the apps I need and it will be updated and kept safe (I hope!)
 
-ADDENDUM: The same method can be used for Debian 13 Trixie and all works fine so far.
+ADDENDUM:
+
+The same method can be used for Debian 13 Trixie and all works fine so far.
 There have been many issues with MX snapshots written to USB key in connection with installing Grub: it always reports that Grub boot loader failed.
+
+
 NEXT CHAPTER:
 For Manjaro and arch the following methods works.
 1. Create a hook in /etc/initcpio/hooks called thunderbolt-auth with contents (without the line numbers!):
