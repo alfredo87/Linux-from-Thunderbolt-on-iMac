@@ -118,5 +118,42 @@ The iMac CPU does the work, the display makes it a pleasure to work on the iMac 
 
 ADDENDUM: The same method can be used for Debian 13 Trixie and all works fine so far.
 There have been many issues with MX snapshots written to USB key in connection with installing Grub: it always reports that Grub boot loader failed.
+NEXT CHAPTER:
+For Manjaro and arch the following methods works.
+1. Create a hook in /etc/initcpio/hooks called thunderbolt-auth with contents (without the line numbers!):
+2.  1 #!/usr/bin/bash                                                              
+ 2 run_hook() {                                                                 
+ 3                                                                              
+ 4         PREREQ=""                                                            
+ 5         prereqs() { echo "$PREREQ"; }                                        
+ 6         case $1 in                                                           
+ 7         prereqs) prereqs; exit 0;;                                           
+ 8         esac                                                                 
+ 9 #        . /scripts/functions                                                
+10         echo "Authorizing Thunderbolt devices"  > /dev/console               
+11         for device in /sys/bus/thunderbolt/devices/*; do                     
+12             if [ -f "$device/authorized" ]; then                             
+13                 echo 1 > "$device/authorized"                                
+14                 echo "Authorized $device"  >  /dev/console                   
+15             fi                                                               
+16         done                                                                 
+17         echo  "Thunderbolt drive authorized $device"  >  /dev/console        
+18 }                                                                            
+19                                                                              
+3. Create a script in /etc/initcpio/install with content (without line numbers):
+4.  1 #!/usr/bin/bash                                                              
+ 2                                                                              
+ 3 build() {                                                                    
+ 4    add_runscript                                                             
+ 5 }                                                                            
+ 6 help() {                                                                     
+ 7 cat <<HELPEOF                                                                
+ 8 This hook authorises thunderbolt drives                                      
+ 9 #this file is stored in /etc/initcpio/install/thunderbolt-auth                                                                              
+10 HELPEOF                                                                      
+11 }                                                                            
+Then run sudo mkinitcpio -P [the path to init image]
+                                                             
+
 
 I hope this helps somebody else to keep "old" Intel Apple macs running.
