@@ -156,6 +156,9 @@ For Manjaro and arch the following methods works.
  9 #this file is stored in /etc/initcpio/install/thunderbolt-auth                                                                              
 10 HELPEOF                                                                      
 11 }                                                                            
+Add thunderbolt to the MODULES section of /etc/mkinitcpio.conf
+Add tunderbolt-auth to the HOOKS section of /etc/mkinitcpio.conf
+
 Then run sudo mkinitcpio -P [the path to init image]
                                                              
 
