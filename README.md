@@ -122,7 +122,7 @@ The same method can be used for Debian 13 Trixie and all works fine so far.
 There have been many issues with MX snapshots written to USB key in connection with installing Grub: it always reports that Grub boot loader failed.
 
 
-NEXT CHAPTER:
+###     NEXT CHAPTER:
 For Manjaro and arch the following methods works.
 1. Create a hook in /etc/initcpio/hooks called thunderbolt-auth with contents (without the line numbers!):
 2.  1 #!/usr/bin/bash                                                              
