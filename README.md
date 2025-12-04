@@ -34,6 +34,10 @@ ________________________________________________________________________________
 
 ###    2. The Journey towards a Solution
 
+ The method presented here has the advantage that the iMac hard disk and fusion drive are available and MacOS can be run if desired.
+ To install another OS on the iMac means to wipe all the files on the existing drive.
+ It needs to be pointed out that the use of a thunderbolt/USB4 enclosure and drive has big security implications.
+ 
  First task was to find a distro that worked almost out-of-the-box. To make testing easier I used a Ventoy USB dongle with a lot of live ISOs.
  
  ![](./Screenshot_2025-07-13_09-24-29.png "List of ISOs")
