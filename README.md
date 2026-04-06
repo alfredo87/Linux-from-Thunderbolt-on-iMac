@@ -128,38 +128,38 @@ There have been many issues with MX snapshots written to USB key in connection w
 
 ###     NEXT CHAPTER:
 For Manjaro and arch the following methods works.
-1. Create a hook in /etc/initcpio/hooks called thunderbolt-auth with contents (without the line numbers!):
-2.  1 #!/usr/bin/bash                                                              
- 2 run_hook() {                                                                 
- 3                                                                              
- 4         PREREQ=""                                                            
- 5         prereqs() { echo "$PREREQ"; }                                        
- 6         case $1 in                                                           
- 7         prereqs) prereqs; exit 0;;                                           
- 8         esac                                                                 
- 9 #        . /scripts/functions                                                
-10         echo "Authorizing Thunderbolt devices"  > /dev/console               
-11         for device in /sys/bus/thunderbolt/devices/*; do                     
-12             if [ -f "$device/authorized" ]; then                             
-13                 echo 1 > "$device/authorized"                                
-14                 echo "Authorized $device"  >  /dev/console                   
-15             fi                                                               
-16         done                                                                 
-17         echo  "Thunderbolt drive authorized $device"  >  /dev/console        
-18 }                                                                            
-19                                                                              
-3. Create a script in /etc/initcpio/install with content (without line numbers):
-4.  1 #!/usr/bin/bash                                                              
- 2                                                                              
- 3 build() {                                                                    
- 4    add_runscript                                                             
- 5 }                                                                            
- 6 help() {                                                                     
- 7 cat <<HELPEOF                                                                
- 8 This hook authorises thunderbolt drives                                      
- 9 #this file is stored in /etc/initcpio/install/thunderbolt-auth                                                                              
-10 HELPEOF                                                                      
-11 }                                                                            
+1. Create a hook in /etc/initcpio/hooks called thunderbolt-auth with contents :
+2.   #!/usr/bin/bash                                                              
+     n_hook() {                                                                 
+                                                                                
+         PREREQ=""                                                            
+          prereqs() { echo "$PREREQ"; }                                        
+          case $1 in                                                           
+          prereqs) prereqs; exit 0;;                                           
+          esac                                                                 
+  #        . /scripts/functions                                                
+         echo "Authorizing Thunderbolt devices"  > /dev/console               
+         for device in /sys/bus/thunderbolt/devices/*; do                     
+             if [ -f "$device/authorized" ]; then                             
+                 echo 1 > "$device/authorized"                                
+                 echo "Authorized $device"  >  /dev/console                   
+             fi                                                               
+         done                                                                 
+         echo  "Thunderbolt drive authorized $device"  >  /dev/console        
+ }                                                                            
+                                                                              
+3. Create a script in /etc/initcpio/install with content :
+4.   #!/usr/bin/bash                                                              
+                                                                               
+  build() {                                                                    
+     add_runscript                                                             
+  }                                                                            
+  help() {                                                                     
+  cat <<HELPEOF                                                                
+  This hook authorises thunderbolt drives                                      
+  #this file is stored in /etc/initcpio/install/thunderbolt-auth                                                                              
+ HELPEOF                                                                      
+ }                                                                            
 Add thunderbolt to the MODULES section of /etc/mkinitcpio.conf
 Add tunderbolt-auth to the HOOKS section of /etc/mkinitcpio.conf
 
