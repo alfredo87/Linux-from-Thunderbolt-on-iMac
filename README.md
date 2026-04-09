@@ -1,5 +1,5 @@
 
- # **iMac 18,3 Intel boot and run MX Linux from Thunderbolt**
+ # **Install, boot and run MX Linux (and Arch) from Thunderbolt**
 #**Run Linux from USB4/thunderbolt drive**
 
 ![](./Imac.jpg)
