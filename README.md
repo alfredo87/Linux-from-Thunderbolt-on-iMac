@@ -163,6 +163,7 @@ Create a script in /etc/initcpio/install with content :
        cat <<HELPEOF                                                                
        This hook authorises thunderbolt drives                                      
        #this file is stored in /etc/initcpio/install/thunderbolt-auth                                               HELPEOF
+       HELPEOF
        }
 
                                                                           
