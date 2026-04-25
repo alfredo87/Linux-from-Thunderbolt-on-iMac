@@ -1,5 +1,5 @@
 
- # **Install, boot and run MX Linux (and Arch) from Thunderbolt**
+ # **Install, boot and run MX Linux (and Arch)  from Thunderbolt and now OpenBSD too**
 #**Run Linux from USB4/thunderbolt drive**
 
 ![](./Imac.jpg)
@@ -11,12 +11,8 @@ FIGURE1. IMAC RUNNING MX LINUX WITH MICE IN FRONT AND KEYBOARD
 
 The intel powered mac computers are now reaching their End Of Life according to Apple: no more updates, less security updates. Software is intentionally being withdrawn since apps will stop working.
 
-The hardware so, that is a different story. My iMac 18,3 made in 2017 is still working perfectly and it has a display that is one of the best I have seen.
 
-So, the project aim is to continue to use the hardware for as long as possible or until the device stops working.
 
-The iMac is an all-in-one device: the motherboard and power supply unit are installed behind the screen in a thin casing of aluminium. To access the components the screen needs to be taken off completely and re-assembled.
-And that is a very difficult and dangerous job…
 
 So, I decided that I could install a linux distro and double boot it with macOS: I tried and failed miserably because of the mac fusion drive setup… and it was slow.
 
@@ -171,7 +167,8 @@ Add thunderbolt to the MODULES section of /etc/mkinitcpio.conf
 Add tunderbolt-auth to the HOOKS section of /etc/mkinitcpio.conf
 
 Then run sudo mkinitcpio -P [the path to init image]
-                                                             
-
+###    And NOW the openBSD installation (really not hard)                                                              
+Th* drive like all the others.
+Install openBSD and enjoy creating a desktop based on XFCE$ or KDE Plasma!e drive on the USB4 port just appears as an sd
 
 I hope this helps somebody else to keep "old" Intel Apple macs running.
