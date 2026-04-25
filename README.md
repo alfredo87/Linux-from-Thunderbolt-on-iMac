@@ -171,5 +171,5 @@ Then run sudo mkinitcpio -P [the path to init image]
 The USB4 drive magically appears as an /dev/sd* drive like all the other drives: sd0,sd1,etc.
 
 Install openBSD and enjoy creating a desktop based on XFCE4 or KDE Plasma.
-
-I hope this helps somebody else to keep "old" Intel Apple macs running.
+###   FOOTNOTE:
+I have scrapped the iMac and now working on a miniPC GEEKOM A8 with Windows, Manjaro and openBSD.
