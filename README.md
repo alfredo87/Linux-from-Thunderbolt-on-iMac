@@ -168,7 +168,8 @@ Add tunderbolt-auth to the HOOKS section of /etc/mkinitcpio.conf
 
 Then run sudo mkinitcpio -P [the path to init image]
 ###    And NOW the openBSD installation (really not hard)                                                              
-Th* drive like all the others.
-Install openBSD and enjoy creating a desktop based on XFCE$ or KDE Plasma!e drive on the USB4 port just appears as an sd
+The USB4 drive magically appears as an /dev/sd* drive like all the other drives: sd0,sd1,etc.
+
+Install openBSD and enjoy creating a desktop based on XFCE4 or KDE Plasma.
 
 I hope this helps somebody else to keep "old" Intel Apple macs running.
