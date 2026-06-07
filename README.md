@@ -172,4 +172,5 @@ The USB4 drive magically appears as an /dev/sd* drive like all the other drives:
 
 Install openBSD and enjoy creating a desktop based on XFCE4 or KDE Plasma.
 ###   FOOTNOTE:
-I have scrapped the iMac and now working on a miniPC GEEKOM A8 with Windows, Manjaro and openBSD.
+I have scrapped the iMac and now working on a miniPC GEEKOM A8 with  Manjaro-COSMIC.
+<img width="1920" height="1080" alt="cosmic" src="https://github.com/user-attachments/assets/bfe98d0a-9a6a-4a0f-b378-df6bd9bcf417" />
